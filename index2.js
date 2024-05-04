@@ -76,3 +76,5 @@ try {
 }
 
 console.log("\nEnd of code!\n");
+
+/* Реалізація через рекурсію у index.js !*/

@@ -86,3 +86,5 @@ try {
 }
 
 console.log("\nEnd of code!\n");
+
+/* Реалізація через цикли у index2.js !*/
