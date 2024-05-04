@@ -4,6 +4,19 @@
 
 console.log("\nЗАВДАННЯ З (*)!\n");
 
+/**
+ * Функція, яка реалізовує алгоритм Евкліда, для знаходження найбільшого спільного дільника
+ * Реалізація використовує цикл
+ * Працює з від'ємними числами
+ * Самостійно визначає який з параметрів є більшим числом, а який меншим
+ * Повертає помилки у разі, якщо параметри не є цілим числом відмінним від 0
+ * @param {number} number1 
+ * @param {number} number2
+ * @throws {TypeError} Params is not a numbers!
+ * @throws {Error} Params must be integer!
+ * @throws {Error} Params can't be 0!
+ * @returns {number}
+ */
 const greatestCommonDivisorByEuclidLoop = (number1, number2) => {
   let greaterNumber;
   let lesserNumber;
@@ -16,10 +29,10 @@ const greatestCommonDivisorByEuclidLoop = (number1, number2) => {
     Number.isInteger(number1) === false ||
     Number.isInteger(number2) === false
   ) {
-    throw new Error("Numbers must be integer!");
+    throw new Error("Params must be integer!");
   }
   if (number1 === 0 || number2 === 0) {
-    throw new Error("Numbers can't be 0!");
+    throw new Error("Params can't be 0!");
   }
 
   // Позбавляємось від можливого від'ємного значення
