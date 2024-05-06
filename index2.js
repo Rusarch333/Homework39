@@ -25,7 +25,7 @@ const greatestCommonDivisorByEuclidLoop = (number1, number2) => {
 
   // Перевірки вхідних параметрів
   if (typeof number1 !== "number" || typeof number2 !== "number") {
-    throw new Error("Params is not a numbers!");
+    throw new TypeError("Params is not a numbers!");
   }
   if (
     Number.isInteger(number1) === false ||
